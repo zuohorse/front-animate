@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Arial,'Times New Roman','Microsoft YaHei',SimHei;
+}
+h2,h3{
+	font-weight:normal;
+}
+ul li{
+	list-style:none;
+}
+#header{
+	width:100%;
+	height:50px;
+	background:#154963;
+	position:fixed;
+}
+#header .center{
+	width:89%;
+	height:100%;
+	margin:0 auto;
+}
+#header .center .logo{
+	width:226px;
+	height:45px;
+	float:left;
+	padding-top:5px;
+}
+#header .center .nav{
+	width:450px;
+	height:100%;
+	float:right;
+}
+
+#header .center .nav ul li{
+	height:50px;
+	list-style:none;
+	float:left;
+	color:#fff;
+	font-size:14px;
+	margin-right:40px;
+	line-height:50px;
+	cursor:pointer;
+}
+#header .center .nav ul li:hover{
+	color:#FDB90D;
+}
+#header .center .nav ul span{
+	display:inline-block;
+	width:65px;
+	height:50px;
+	text-align:center;
+	float:right;
+	line-height:50px;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer;
+	transition:background-color 0.3s ease-in-out;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
+	-ms-transition:background-color 0.3s ease-in-out;
+}
+#header .center .nav ul span:hover{
+	background:#FDB90D;
+}
+
+#section{
+	width:100%;
+	height:552px;
+	background-image:url(img/Butterfly.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#section .hsContainer{
+	display: table;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+#section .hsContainer .hsContent{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+}
+#section .hsContainer .hsContent h2{
+	font-size:45px;
+	margin-bottom:30px;
+}
+#section .hsContainer .hsContent h3{
+	font-size:28px;
+	margin-bottom:70px;
+}
+#section .hsContainer .hsContent .buttons a{
+	display:inline-block;
+	width:200px;
+	height:45px;
+	border:2px solid #fff;
+	text-align:center;
+	line-height:45px;
+	margin-right:25px;
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+	transition:background-color 0.3s ease-in-out;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
+	-ms-transition:background-color 0.3s ease-in-out;
+}
+#section .hsContainer .hsContent .buttons a:hover{
+	background:#154963;
+	border:2px solid #154963;
+}
+
+#section1{
+	width:100%;
+	height:80px;
+	background:#154963;
+	padding:35px 0;
+}
+#section1 p{
+	width:100%;
+	color:#fff;
+	text-align:center;
+	margin-bottom:10px;
+}
+#section2{
+	width:100%;
+	height:500px;
+	background:#ededed;
+}
+#section2 p{
+	color:#FDB90D;
+	width:100%;
+	text-align:center;
+	padding-top:100px;
+	font-size:24px;
+}
+#section3{
+	width:100%;
+	height:80px;
+	background:#FDB90D;
+	text-align:center;
+	color:#fff;
+	line-height:80px;
+	font-size:24px;
+}
+
+#section4{
+	width:100%;
+	height:554px;
+	background-image:url(img/Realtime-Data.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#section5{
+	width:100%;
+	height:500px;
+	background:#ededed;
+}
+#section5 .box{
+	display: table;
+    width: 600px;
+    height: 100%;
+	margin:0 auto;
+    padding: 30px 0;
+}
+#section5 .box .box-child{
+	display: table-cell;
+    vertical-align: middle;
+    color: #383939;
+    text-align: center;
+}
+#section5 .box .box-child p.title{
+	font-size:26px;
+	color:#000;
+	margin-bottom:18px;
+}
+#section5 .box .box-child ul{
+	margin-top:50px;
+}
+#section5 .box .box-child ul li:first-child{
+	margin-left:0;
+}
+#section5 .box .box-child ul li{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	text-align:center;
+	line-height:150px;
+	color:#808080;
+	font-size:18px;
+	border:1px solid #FDB90D;
+	float:left;
+	margin-left:70px;
+	transition:background-color 0.3s ease-in-out;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
+	-ms-transition:background-color 0.3s ease-in-out;
+	cursor:pointer;
+}
+#section5 .box .box-child ul li:hover{
+	background:#FDB90D;
+	color:#fff;
+}
+
+#section6{
+	width:100%;
+	height:80px;
+	background:#fff;
+	text-align:center;
+	line-height:80px;
+	color:#000;
+	font-size:24px;
+}
+#section7{
+	width:100%;
+	height:440px;
+	background-image:url(img/Patient.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#section8{
+	width:100%;
+	height:500px;
+	background:#fff;
+}
+#section9{
+	width:100%;
+	height:80px;
+	background:#154963;
+}
+
+#footer{
+	width:100%;
+	height:300px;
+	background:#252D31;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+   <div class="center">
+      <div class="logo">
+         <img src="img/healthloop-logo-white-2x.png" width="226px;"/>
+      </div>
+      <div class="nav">
+         <ul>
+           <li>WHOWEHELP</li>
+           <li>HEALTHLOOP</li>
+           <li>BLOG</li>
+           <span>LOGIN</span>
+         </ul>
+      </div>
+   </div>
+</div>
+<div id="section">
+   <div class="hsContainer">
+      <div class="hsContent">
+         <h2>What do you care about?</h2>
+         <h3>Keep patients on track – Know what happens <i>when it happens</i>.</h3>
+         <div class="buttons">
+           <a id="signup" class="signup" href="#">REQUEST DEMO</a>
+           <a class="learn" href="#">LEARN MORE</a>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="section1">
+   <p>HealthLoop Recognized by ICHOM as a Leader in Measuring Patient Reported Outcomes  Read more.</p>
+   <p>Are You Ready for CCJR? Read more.</p>
+</div>
+<div id="section2">
+   <p>HealthLoop Recognized by ICHOM as a Leader in Measuring Patient Reported Outcomes  Read more.</p>
+   <p>Are You Ready for CCJR? Read more.</p>
+</div>
+<div id="section3">
+   Are You Ready for CCJR? Read more.
+</div>
+<div id="section4">
+ 
+</div>
+<div id="section5">
+   <div class="box">
+      <div class="box-child">
+         <p class="title">Improved Coordination for Every Patient</p>
+         <p>Eliminate errors by getting the whole picture; patient handoffs made simple at every practice type.</p>
+         <ul>
+           <li>Lion</li>
+           <li>Rabbit</li>
+           <li>Watchmen</li>
+         </ul>
+      </div>
+   </div>
+</div>
+<div id="section6">
+   Effectively Change the Way Your Patients See YOU
+</div>
+<div id="section7">
+  
+</div>
+<div id="section8">
+  
+</div>
+<div id="section9">
+
+</div>
+<div id="footer"></div>
+</body>
+</html>

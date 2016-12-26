@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>这是标题</title>
+<meta name="description" content="机器人,电子" />
+<link href="slider-revolution-slider/rs-plugin/css/settings.css" rel="stylesheet"/>
+<link href="style-revolution-slider.css" rel="stylesheet"/>
+<style>
+
+  /*公共样式*/
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body,html{
+    height: 100%;
+  }
+
+  body{
+    font-family: '微软雅黑';
+    font-size: 14px;
+  }
+
+  ul li{
+    list-style: none;   /*清除默认样式*/
+  }
+
+  .fl{
+    float: left;
+  }
+
+  .fr{
+    float: right;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+
+
+ /*清除浮动代码,需要浮动的元素的父级元素必须清除浮动，不然会出现样式问题*/ 
+ .clearfloat:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:
+    hidden;
+    height:0
+  } 
+ .clearfloat{
+    zoom:1
+  } 
+
+
+  /*业务代码*/
+  #header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+  }
+
+  #header .logoImg{
+    padding: 10px 0;
+    height: 60px;   /*上下padding各占去10px，所以这里高度是60px,总的加起来是80px*/
+  }
+
+  #header .logoImg img,#header .telInfo img{
+    height: 100%;
+  }
+
+  #header .telInfo{
+    padding: 20px 0;
+    height: 40px;
+  }
+
+  #header .telInfo img{
+    margin-right: 10px;
+  }
+  
+  .container{   /*控制居中的盒子*/
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #nav{
+    width: 100%;
+    height: 45px;
+    background: #56B8C0;
+  }
+
+  .navlist{
+    width: 100%;
+  }
+
+  .navlist li{
+    width: 14.27%;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    cursor: pointer;  /*移上去有一个手型*/
+    color: #fff;
+    position: relative;
+  } 
+
+  .navlist li:hover,.subList p:hover{
+    background: orange;
+  }
+
+  .subList{
+    color: #fff;
+    background: #56B8C0;
+  }
+
+  .subList p{
+     height: 45px;
+     line-height: 45px;
+  }
+
+  .navlist li .subList{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1000000;
+  }
+
+
+</style>
+</head>
+<body>
+<div id="header">
+   <div class="container clearfloat">  <!--这里清除浮动-->
+      <div class="logoImg fl">   <!--.fl是向左浮动的样式-->
+          <img src="http://sem1.g3img.com/site/34025014/logo.jpg"/>
+      </div>
+      <div class="telInfo fr">
+         <img src="a.png"/>
+         <img src="b.png"/>
+      </div>
+   </div>
+</div>
+<div id="nav">
+   <div class="container">
+      <ul class="navlist clearfloat">   <!--这里要清除浮动-->
+         <li>互加首页</li>
+         <li>关于我们</li>
+         <li>公司业务</li>
+         <li class="subli">
+            成功案例
+            <div class="subList hide">
+               <p>微分销案例</p>
+               <p>智慧推案例</p>
+            </div>
+         </li>
+         <li>解决方案</li>
+         <li>公司招聘</li>
+         <li>新闻资讯</li>
+      </ul>
+   </div>
+</div>
+
+<!--轮播图-->
+<div id="banner">
+  <div class="page-slider margin-bottom-40">
+      <div class="fullwidthbanner-container revolution-slider">
+        <div class="fullwidthabnner">
+          <ul id="revolutionul">
+            <!-- THE NEW SLIDE -->
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="revolutionslider/thumbs/thumb2.jpg">
+              <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+              <img src="revolutionslider/bg9.jpg" alt="">
+              
+              <div class="caption lft slide_title_white slide_item_left"
+                data-x="30"
+                data-y="90"
+                data-speed="400"
+                data-start="1500"
+                data-easing="easeOutExpo">
+                Explore the Power<br><span class="slide_title_white_bold">of Metronic</span>
+              </div>
+              <div class="caption lft slide_subtitle_white slide_item_left"
+                data-x="87"
+                data-y="245"
+                data-speed="400"
+                data-start="2000"
+                data-easing="easeOutExpo">
+                This is what you were looking for
+              </div>
+              <a class="caption lft btn dark slide_btn slide_item_left" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
+                data-x="187"
+                data-y="315"
+                data-speed="400"
+                data-start="3000"
+                data-easing="easeOutExpo">
+                Purchase Now!
+              </a>                        
+              <div class="caption lfb"
+                data-x="640" 
+                data-y="0" 
+                data-speed="700" 
+                data-start="1000" 
+                data-easing="easeOutExpo">
+                <img src="revolutionslider/lady.png" alt="Image 1">
+              </div>
+            </li>    
+
+            <!-- THE FIRST SLIDE -->
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="revolutionslider/thumbs/thumb2.jpg">
+              <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+              <img src="revolutionslider/bg1.jpg" alt="">
+                            
+              <div class="caption lft slide_title slide_item_left"
+                data-x="30"
+                data-y="105"
+                data-speed="400"
+                data-start="1500"
+                data-easing="easeOutExpo">
+                Need a website design? 
+              </div>
+              <div class="caption lft slide_subtitle slide_item_left"
+                data-x="30"
+                data-y="180"
+                data-speed="400"
+                data-start="2000"
+                data-easing="easeOutExpo">
+                This is what you were looking for
+              </div>
+              <div class="caption lft slide_desc slide_item_left"
+                data-x="30"
+                data-y="220"
+                data-speed="400"
+                data-start="2500"
+                data-easing="easeOutExpo">
+                Lorem ipsum dolor sit amet, dolore eiusmod<br> quis tempor incididunt. Sed unde omnis iste.
+              </div>
+              <a class="caption lft btn green slide_btn slide_item_left" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
+                data-x="30"
+                data-y="290"
+                data-speed="400"
+                data-start="3000"
+                data-easing="easeOutExpo">
+                Purchase Now!
+              </a>                        
+              <div class="caption lfb"
+                data-x="640" 
+                data-y="55" 
+                data-speed="700" 
+                data-start="1000" 
+                data-easing="easeOutExpo">
+                <img src="revolutionslider/man-winner.png" alt="Image 1">
+              </div>
+            </li>
+
+            <!-- THE SECOND SLIDE -->
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb="revolutionslider/thumbs/thumb2.jpg">                        
+              <img src="revolutionslider/bg2.jpg" alt="">
+              <div class="caption lfl slide_title slide_item_left"
+                data-x="30"
+                data-y="125"
+                data-speed="400"
+                data-start="3500"
+                data-easing="easeOutExpo">
+                Powerfull &amp; Clean
+              </div>
+              <div class="caption lfl slide_subtitle slide_item_left"
+                data-x="30"
+                data-y="200"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutExpo">
+                Responsive Admin &amp; Website Theme
+              </div>
+              <div class="caption lfl slide_desc slide_item_left"
+                data-x="30"
+                data-y="245"
+                data-speed="400"
+                data-start="4500"
+                data-easing="easeOutExpo">
+                Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+              </div>                        
+              <div class="caption lfr slide_item_right" 
+                data-x="635" 
+                data-y="105" 
+                data-speed="1200" 
+                data-start="1500" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/mac.png" alt="Image 1">
+              </div>
+              <div class="caption lfr slide_item_right" 
+                data-x="580" 
+                data-y="245" 
+                data-speed="1200" 
+                data-start="2000" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/ipad.png" alt="Image 1">
+              </div>
+              <div class="caption lfr slide_item_right" 
+                data-x="735" 
+                data-y="290" 
+                data-speed="1200" 
+                data-start="2500" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/iphone.png" alt="Image 1">
+              </div>
+              <div class="caption lfr slide_item_right" 
+                data-x="835" 
+                data-y="230" 
+                data-speed="1200" 
+                data-start="3000" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/macbook.png" alt="Image 1">
+              </div>
+              <div class="caption lft slide_item_right" 
+                data-x="865" 
+                data-y="45" 
+                data-speed="500" 
+                data-start="5000" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/hint1-red.png" id="rev-hint1" alt="Image 1">
+              </div>                        
+              <div class="caption lfb slide_item_right" 
+                data-x="355" 
+                data-y="355" 
+                data-speed="500" 
+                data-start="5500" 
+                data-easing="easeOutBack">
+                <img src="revolutionslider/hint2-red.png" id="rev-hint2" alt="Image 1">
+              </div>
+            </li>
+                        
+            <!-- THE THIRD SLIDE -->
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="revolutionslider/thumbs/thumb2.jpg">
+              <img src="revolutionslider/bg3.jpg" alt="">
+              <div class="caption lfl slide_item_left" 
+                data-x="30" 
+                data-y="95" 
+                data-speed="400" 
+                data-start="1500" 
+                data-easing="easeOutBack">
+                <iframe src="http://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowFullScreen></iframe> 
+              </div>
+              <div class="caption lfr slide_title"
+                data-x="470"
+                data-y="100"
+                data-speed="400"
+                data-start="2000"
+                data-easing="easeOutExpo">
+                Responsive Video Support
+              </div>
+              <div class="caption lfr slide_subtitle"
+                data-x="470"
+                data-y="170"
+                data-speed="400"
+                data-start="2500"
+                data-easing="easeOutExpo">
+                Youtube, Vimeo and others.
+              </div>
+              <div class="caption lfr slide_desc"
+                data-x="470"
+                data-y="220"
+                data-speed="400"
+                data-start="3000"
+                data-easing="easeOutExpo">
+                Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+              </div>
+              <a class="caption lfr btn yellow slide_btn" href=""
+                data-x="470"
+                data-y="280"
+                                 data-speed="400"
+                                 data-start="3500"
+                                 data-easing="easeOutExpo">
+                                 Watch more Videos!
+                            </a>
+                        </li>               
+                        
+                        <!-- THE FORTH SLIDE -->
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="revolutionslider/thumbs/thumb2.jpg">
+                            <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                            <img src="revolutionslider/bg4.jpg" alt="">                        
+                             <div class="caption lft slide_title"
+                                 data-x="30"
+                                 data-y="105"
+                                 data-speed="400"
+                                 data-start="1500"
+                                 data-easing="easeOutExpo">
+                                 What else included ?
+                            </div>
+                            <div class="caption lft slide_subtitle"
+                                 data-x="30"
+                                 data-y="180"
+                                 data-speed="400"
+                                 data-start="2000"
+                                 data-easing="easeOutExpo">
+                                 The Most Complete Admin Theme
+                            </div>
+                            <div class="caption lft slide_desc"
+                                 data-x="30"
+                                 data-y="225"
+                                 data-speed="400"
+                                 data-start="2500"
+                                 data-easing="easeOutExpo">
+                                 Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+                            </div>
+                            <a class="caption lft slide_btn btn red slide_item_left" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank" 
+                                 data-x="30"
+                                 data-y="300"
+                                 data-speed="400"
+                                 data-start="3000"
+                                 data-easing="easeOutExpo">
+                                 Learn More!
+                            </a>                        
+                            <div class="caption lft start"  
+                                 data-x="670" 
+                                 data-y="55" 
+                                 data-speed="400" 
+                                 data-start="2000" 
+                                 data-easing="easeOutBack"  >
+                                 <img src="revolutionslider/iphone_left.png" alt="Image 2">
+                            </div>
+                            
+                            <div class="caption lft start"  
+                                 data-x="850" 
+                                 data-y="55" 
+                                 data-speed="400" 
+                                 data-start="2400" 
+                                 data-easing="easeOutBack"  >
+                                 <img src="revolutionslider/iphone_right.png" alt="Image 3">
+                            </div>                        
+                        </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="slider-revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="slider-revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<!-- <script type="text/javascript" src="unslider-min.js"></script> -->
+<script type="text/javascript">
+$(function(){
+  $('.subli').hover(function(){
+      $('.subList').show();
+  },function(){
+      $('.subList').hide();
+  });
+
+  $('.fullwidthabnner').show().revolution({ 
+        delay:2000,
+        startheight:417,
+        startwidth:1150,
+
+        hideThumbs:10,
+
+        thumbWidth:100,                         // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+        thumbHeight:50,
+        thumbAmount:5,
+
+        navigationType:"bullet",                // bullet, thumb, none
+        navigationArrows:"solo",                // nexttobullets, solo (old name verticalcentered), none
+
+        navigationStyle:"round",                // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+        navigationHAlign:"center",              // Vertical Align top,center,bottom
+        navigationVAlign:"bottom",              // Horizontal Align left,center,right
+        navigationHOffset:0,
+        navigationVOffset:20,
+
+        soloArrowLeftHalign:"left",
+        soloArrowLeftValign:"center",
+        soloArrowLeftHOffset:20,
+        soloArrowLeftVOffset:0,
+
+        soloArrowRightHalign:"right",
+        soloArrowRightValign:"center",
+        soloArrowRightHOffset:20,
+        soloArrowRightVOffset:0,
+
+        touchenabled:"on",                      // Enable Swipe Function : on/off
+        onHoverStop:"on",                       // Stop Banner Timet at Hover on Slide on/off
+
+        stopAtSlide:-1,
+        stopAfterLoops:-1,
+
+        hideCaptionAtLimit:0,         // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+        hideAllCaptionAtLilmit:0,       // Hide all The Captions if Width of Browser is less then this value
+        hideSliderAtLimit:0,          // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+        shadow:1,                               //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+        fullWidth:"on"                          // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+    });
+});
+</script>
+</body>
+</html>
+
+
+
+
